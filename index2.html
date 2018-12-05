@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <title>juanito</title>
+        <script src="https://aframe.io/releases/0.8.2/aframe.js"></script>
+
+        <style>
+            body
+            {
+                background-color: rgb(0, 174, 255);
+            }
+        </style>
+    </head>
+    
+    <body class="a-body ">
+        <a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
+            <a-sound src="src: url(modelo/bells.mp3)" loop="true"volume="100" autoplay="true" position="0 2 5"></a-sound>
+            <a-box src="#textura" depth="500" height="40" width="800" position="0 -80 0" material="" geometry=""></a-box>
+            <a-assets>
+                <a-asset-item id="object" src="modelo/pokeball-vray.obj"></a-asset-item>
+                <a-asset-item id="material" src="modelo/pokeball-vray.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <img id="textura" src="modelo/textura.jpg">
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="object1" src="modelo/model.obj"></a-asset-item>
+                <a-asset-item id="material1" src="modelo/materials.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="santanas-object" src="modelo/santanas.obj"></a-asset-item>
+                <a-asset-item id="santanas-mat" src="modelo/santanas.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="trineo-object" src="modelo/trineo.obj"></a-asset-item>
+                <a-asset-item id="trineo-mat" src="modelo/trineo.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="arbol-object" src="modelo/arbol.obj"></a-asset-item>
+                <a-asset-item id="arbol-mat" src="modelo/arbol.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="casa-object" src="modelo/casa.obj"></a-asset-item>
+                <a-asset-item id="casa-mat" src="modelo/casa.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="snowman-object" src="modelo/snowman.obj"></a-asset-item>
+                <a-asset-item id="snowman-mat" src="modelo/snowman.mtl"></a-asset-item>
+            </a-assets>
+            <a-assets>
+                <a-asset-item id="dragon-object" src="modelo/dragon.obj"></a-asset-item>
+                <a-asset-item id="dragon-mat" src="modelo/dragon.mtl"></a-asset-item>
+            </a-assets>
+            <!-- modelos -->
+            <a-obj-model rotation="0 100 0" position="-30 48.655958836999616 -60" scale="170 170 270" src="#casa-object" mtl="#casa-mat" material="" obj-model=""></a-obj-model>
+            <a-obj-model rotation="0 190 0" position="-300 30 -70" scale="300 300 300" src="#arbol-object" mtl="#arbol-mat" material="" obj-model=""><a-animation attribute="rotation"
+                dur="10000"
+                fill="forwards"
+                to="0 340 0"
+                repeat="indefinite"></a-animation></a-obj-model> 
+            <a-obj-model rotation="0 63.772470213851854 0" position="-280 -38.92879052862352 40" scale="70 70 70" src="#object1" mtl="#material1" material="" obj-model=""></a-obj-model>
+            <a-obj-model rotation="0 280 0" position="290 71.83429195299965 -95.17372073518308" scale="140 140 140" src="#snowman-object" mtl="#snowman-mat" material="" obj-model=""></a-obj-model>
+            <a-obj-model rotation="0 210.00000000000003 0" position="114.96578666789975 -16.7426317222899 292.2835781033495" scale="70 70 70" src="#trineo-object" mtl="#trineo-mat" material="" obj-model=""></a-obj-model>
+            <a-obj-model rotation="0 81.01463229562945 0" position="218.741 10.972 227.03716851539252" scale="70 70 70" src="#santanas-object" mtl="#santanas-mat" material="" obj-model=""></a-obj-model>
+            <a-obj-model rotation="0 128.647 0" position="35.059 -33.674 323.05140085674606" scale="70 70 70" src="#dragon-object" mtl="#dragon-mat" material="" obj-model=""></a-obj-model>
+            <a-obj-model rotation="0 125.78099999999999 0" position="54.666008191706204 -35.708 351.888" scale="70 70 70" src="#dragon-object" mtl="#dragon-mat" material="" obj-model=""></a-obj-model>
+            
+            <!--camarita-->
+            
+           <a-entity position="-150 200 500">
+                <a-camera camera="" position="0 -100 40" rotation="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera=""></a-camera>
+            </a-entity>
+        </a-scene>
+    
+</body></html>
